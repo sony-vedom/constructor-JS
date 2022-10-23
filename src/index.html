@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Конструктор</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/fontawesome-free/css/all.min.css">
+</head>
+<body>
+<header>
+    <h1>Ванильный конструктор заметок</h1>
+    <i class="fas fa-rocket"></i>
+</header>
+<main id="app" class="container-fluid">
+
+    <aside id="panel" class="bg-light sidebar">
+        <form name="form" id="form">
+            <h5>Добавьте название</h5>
+            <div class="form-group">
+                <label>
+                    <input class="form-control form-control-sm" name="title" required placeholder="Введите текст...">
+                </label>
+            </div>
+        <hr />
+
+            <h5>Выберите тему</h5>
+            <label>
+                <select name="themes">
+
+                    <option selected class='theme' data-name="fa-clipboard-list">Обычное</option>
+                    <option class='theme' data-name="fa-rocket">Мечты</option>
+                    <option class='theme' data-name="fa-star">Праздник</option>
+                    <option class='theme' data-name="fa-calendar-check">Важное</option>
+                    <option class='theme' data-name="fa-clock">Cрочное</option>
+
+                </select>
+            </label>
+            <hr />
+
+
+            <h5>Добавьте описание</h5>
+            <div class="form-group">
+                <label>
+                    <input class="form-control form-control-sm" name="description" placeholder="Введите текст...">
+                </label>
+
+
+            </div>
+        <hr />
+
+         <button type="submit" class="btn btn-primary btn-sm">Добавить</button>
+        </form>
+    </aside>
+
+    <section id="site" class="content">
+
+    </section>
+</main>
+
+<script src="index.js" defer></script>
+
+</body>
+</html>
+
