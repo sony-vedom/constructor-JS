@@ -8,5 +8,5 @@
 - Parcel
 
 Запустить:
-npm run serve
-npm run build
+- npm run serve
+- npm run build
